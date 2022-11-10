@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    height: 635px;
+    width: 1150px;
+    margin-left: 100px;
+    border: 1px solid #ffffff;
+    font-family: arial;
+   
+}
+nav{
+    position: absolute;
+    display: flex;
+    height: 80px;
+    width: 1150px;
+    margin-top: 10px;
+}
+.nav-items{
+    position: absolute;
+    display: flex;
+    margin-left: 250px;
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.nav-item{
+    margin-left: 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.nav-item.active-item{
+    color: #e75b30;
+    font-weight: bold;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+
+}
+nav img[ src="./images/logo.svg"]{
+    position: absolute;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+nav img[src="./images/actions.svg"]{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 995px;
+    height: 50px;
+    width: 230px;
+    cursor: pointer;
+}
+.intro-section{
+    position: relative;
+    margin-top: 80px;
+    height: 500px;
+    width: 1150px;
+}
+.left-section{
+    position: absolute;
+    height: 700px;
+    width: 600px;
+
+
+}
+.left-section h3{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5px;
+    font-size: 35px;
+    font-family: 'Albert Sans', sans-serif;
+}
+.left-section img{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+.left-section h1{
+    position: absolute;
+    height: 100px;
+    width: 800px;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 5px;
+    font-family: 'Fredoka One', cursive;
+}
+.sub-headlines{
+    position: absolute;
+    height: 100px;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 70px;
+}
+.sub-headline{
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.sub-headlines img[src="./images/plus.svg"]{
+    position: relative;
+    background-color: #ce4339;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px; 
+}
+.text{
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 10px;
+    color: #c9c9c9;
+    height: 70px;
+    width: 550px;
+    font-size: 14px;
+    text-align: unset;
+}
+.action-btns{
+    position: absolute;
+    display: flex;
+    margin-top: 480px;
+    margin-left: 10px;
+}
+.action-btn{
+    margin-left: 25px;
+    height: 45px;
+    width: 150px;
+    border-radius: 25px;
+    border: transparent;
+    background-color: #e75b30;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.right-section{
+    position: relative;
+    height: 700px;
+    width: 600px;
+    margin-left: 500px;
+}
+.headphone-div{
+    position: relative;
+}
+.headphone-div img[src="./images/discount.svg"]{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    z-index: 1;  
+    margin-left: 140px; 
+    margin-top: 230px;
+}
+.headphone-div img[src="./images/headphones.jpg"]{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin-left: 170px;
+}
+.discount-content h4{
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 175px;
+    color: #ffffff;
+    z-index: 1;
+    font-size: 13px;
+}
+.discount-content h1{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 162px;
+    color: #ffffff;
+    z-index: 1;
+    font-size: 40px;
+}
+.discoount{
+    position: absolute;
+    margin-left: 100px;
+}
+.discount-content{
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    font-family: 'Albert Sans', sans-serif;
+}
+.dots{
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    margin-left: 280px;
+    margin-top: 10px;
+}
+.dot {
+    display: inline-block;
+    margin-left: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+.yellow-dot{
+    background-color: yellow;  
+}
+.tomato-dot{
+    background-color: #EF473B;
+}
+.black-dot{
+    background-color: #000000;  
+}
+.right-section .action-btn{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+/*--- hover ---*/
+.nav-item {
+    position: relative;
+    display: inline-block;
+    
+}
+.nav-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform: scalex(0);
+    transform-origin: bottom left;
+    transition: all 0.25s ease;
+}
+.nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.nav-item:hover {
+    color: #EF473B;
+}
+.action-btn:hover {
+    color: #000;
+    background-color: #f1e647;
+    border: 3px solid red;
+    border-radius: 30px;
+    transition: all .50s ease-in;
+    font-size: larger;
+}
